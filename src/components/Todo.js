@@ -2,10 +2,10 @@ import React from 'react'
 
 const Todo = props => {
     return (
-        <div /* className={`todo${props.todos.completed ? 'completed' : ''}`}
-             onClick = {()=> props.toggleTodo(props.todos.id)} */
+        <div  className={`todo${props.todo.completed ? 'completed' : ''}`}
+             onClick = {()=> props.toggleTodo(props.todo.id)}  
         >
-            <p>{props.todo}</p>
+            <p>{props.todo.task}</p>
         </div>
     )
 }
