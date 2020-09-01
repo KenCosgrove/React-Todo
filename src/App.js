@@ -5,9 +5,9 @@ import './components/Todo.css'
 
 const todos = [
  {
-   task: 'gym',
-   id: 231,
-   completed: false
+   task: '',
+   id: '' ,
+   completed: ''
  }
 ];
 
