@@ -1,11 +1,12 @@
 import React from 'react';
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
+import './components/Todo.css'
 
 const todos = [
  {
-   task: '',
-   id: '',
+   task: 'gym',
+   id: 231,
    completed: false
  }
 ];
@@ -58,8 +59,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>Welcome to your Todo App</h2>
+      <div className="container">
+        <h2>Welcome To Your Todo App!</h2>
         <TodoForm addTodo={this.addTodo} />
         <TodoList 
           todos={this.state.todos}
