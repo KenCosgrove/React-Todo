@@ -1,0 +1,96 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+
+* {
+    outline: none;
+}
+
+
+.todocompleted {
+    text-decoration: line-through;
+    color: red;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url("https://images.unsplash.com/photo-1589987607627-616cac5c2c5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80 no-repeat center/cover" )
+    
+}
+
+h2 {
+    font-size: 3rem;
+    color: dodgerblue;
+    text-shadow: 1px 1px white;
+    text-align: center;
+}
+
+.add-btn {
+    margin-top: 1rem;
+    margin-bottom: -3rem;
+    padding: .5rem 1.2rem;
+    background: white;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+}
+
+.clear-btn {
+    margin-top: 2rem;
+    padding: .5rem 1.2rem;
+    background: white;
+    color: red;
+    border: 2px solid red;
+}
+
+.add-btn:hover {
+    background: dodgerblue;
+    color: white;
+}
+
+.clear-btn:hover {
+    background: red;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: .5rem 1rem;
+    border: none;
+}
+
+input[type="text"]::placeholder {  
+    text-align: center; 
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px black;
+}
